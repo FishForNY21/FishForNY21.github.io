@@ -1,0 +1,147 @@
+# Create the HTML content for the campaign website
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fish For NY 21</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#donate">Donate</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Fish For NY 21</h1>
+            <p>Building a Better Future Together</p>
+            <a href="#volunteer" class="button">Join the Campaign</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Jeremie Fish</h2>
+        <p>Jeremie Fish is committed to representing the people of New York's 21st district with integrity, transparency, and dedication. With a background in community service and a passion for public policy, Jeremie is ready to lead with vision and compassion.</p>
+    </section>
+
+    <section id="platform">
+        <h2>Our Platform</h2>
+        <ul>
+            <li>Affordable Healthcare for All</li>
+            <li>Investing in Education and Teachers</li>
+            <li>Protecting the Environment and Promoting Clean Energy</li>
+            <li>Supporting Small Businesses and Local Economies</li>
+            <li>Ensuring Fair Wages and Workers' Rights</li>
+        </ul>
+    </section>
+
+    <section id="volunteer">
+        <h2>Get Involved</h2>
+        <p>We need your help to make a difference. Volunteer your time and talents to support Jeremie Fish's campaign.</p>
+        <a href="#" class="button">Sign Up to Volunteer</a>
+    </section>
+
+    <section id="donate">
+        <h2>Support the Campaign</h2>
+        <p>Your contributions help us reach more voters and spread our message. Every dollar counts!</p>
+        <a href="#" class="button">Donate Now</a>
+    </section>
+
+    <footer>
+        <p>Contact: info@fishforny21.com | Follow us on 
+            <a href="#">Twitter</a>, 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>
+        </p>
+        <p>&copy; 2024 Fish For NY 21 Campaign</p>
+    </footer>
+</body>
+</html>
+"""
+
+# Create the CSS content for styling the campaign website
+css_content = """
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #0055a5;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #003366;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+"""
+
+# Save the HTML and CSS content to files
+with open("index.html", "w") as html_file:
+    html_file.write(html_content)
+
+with open("style.css", "w") as css_file:
+    css_file.write(css_content)
